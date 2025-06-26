@@ -1,0 +1,6 @@
+{
+          "algorithm": "\nThe new algorithm selects the bin with the maximum rest capacity as the greedy score function for assigning an item, optimizing the assignment process by directly choosing the bin with the highest remaining capacity.\n",
+          "code": "import numpy as np\n\ndef score(item, bins):\n    scores = bins / np.max(bins)  \n    return scores",
+          "objective": null,
+          "other_inf": null
+}

@@ -1,0 +1,6 @@
+{
+          "algorithm": "\nCreate a new algorithm to update the edge distance matrix by increasing the distance of edges used in the local optimal tour while decreasing the distance of edges not used frequently, with the goal of exploring new routes and potentially finding a shorter tour.\n",
+          "code": "import numpy as np\n\ndef update_edge_distance(edge_distance, local_opt_tour, edge_n_used):\n    updated_edge_distance = np.copy(edge_distance)\n    for i in range(len(local_opt_tour)-1):\n        edge_used = (local_opt_tour[i], local_opt_tour[i+1])\n        updated_edge_distance[edge_used] *= 1.1  # Increase the distance of edges used in the local optimal tour\n    for i in range(len(edge_distance)):\n        for j in range(len(edge_distance)):\n            if edge_n_used[i,j] < 2:  # Decrease the distance of edges not used frequently\n                updated_edge_distance[i,j] *= 0.9\n    return updated_edge_distance",
+          "objective": 4.58226,
+          "other_inf": null
+}

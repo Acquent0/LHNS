@@ -1,0 +1,6 @@
+{
+          "algorithm": "\n",
+          "code": "import numpy as np\n\ndef heuristics(node1, node2, nodes , edge_attrs):\n    edge_attrs1 = edge_attrs[node1, nodes]\n    node = nodes[np.argmin(edge_attrs1)]\n    return node",
+          "objective": null,
+          "other_inf": null
+}

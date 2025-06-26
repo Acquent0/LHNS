@@ -1,0 +1,6 @@
+{
+          "algorithm": "\nThe new algorithm selects the next node by first calculating the distance of all unvisited nodes to the current node, then selecting the node with the shortest distance as the next node.\n",
+          "code": "import numpy as np\n\ndef select_next_node(current_node, destination_node, unvisited_nodes, distance_matrix):\n    distances = distance_matrix[current_node, unvisited_nodes]\n    next_node = unvisited_nodes[np.argmin(distances)]\n    return next_node",
+          "objective": 7.21241,
+          "other_inf": null
+}

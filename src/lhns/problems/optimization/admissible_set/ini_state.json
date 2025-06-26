@@ -1,0 +1,6 @@
+{
+          "algorithm": "\nThe algorithm is a greedy approach that calculates the score function based on the weighted sum of the absolute values of the elements in the vector 'el', and then divides by the number of elements in the vector to prioritize vectors with smaller average absolute values for adding to the set in order to maximize its size.\n",
+          "code": "def priority(el, n, w):\n    score = sum(abs(i) for i in el) / n\n    return score",
+          "objective": null,
+          "other_inf": null
+}

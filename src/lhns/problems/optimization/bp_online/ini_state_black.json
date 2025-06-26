@@ -1,0 +1,6 @@
+{
+          "algorithm": "\n",
+          "code": "import numpy as np\n\ndef heuristics(node_attr, node_attrs1):\n    node_attrs1 = node_attrs1 / np.max(node_attrs1)  \n    return node_attrs1",
+          "objective": null,
+          "other_inf": null
+}

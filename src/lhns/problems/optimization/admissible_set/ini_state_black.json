@@ -1,0 +1,6 @@
+{
+          "algorithm": "\n",
+          "code": "def heuristics(vector, number1, number2):\n    vector_attr = sum(abs(i) for i in vector) / number1\n    return vector_attr",
+          "objective": null,
+          "other_inf": null
+}
